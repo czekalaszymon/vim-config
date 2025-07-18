@@ -60,19 +60,6 @@ nnoremap <Space><Down>  :resize +2<CR>
 " --- Equalize all splits ---
 nnoremap <Space>= <C-w>=
 
-" --- Plugins ---
-if has('nvim') || has('packages')
-  set packpath^=~/.vim
-  packadd! matchit
-endif
-
-call plug#begin('~/.vim/plugged')
-
-" Emmet for fast HTML & CSS expansions
-Plug 'mattn/emmet-vim'
-
-call plug#end()
-
 " --- Filetype & plugin detection ---
 filetype plugin indent on
 
